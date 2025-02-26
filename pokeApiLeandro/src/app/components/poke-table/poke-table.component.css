@@ -1,0 +1,84 @@
+.container {
+    width: 80%;
+    margin-top: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pokemon-table {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.pokemon-table-header-cell {
+    background-color: #3498db;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+
+.pokemon-table-cell {
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pokemon-table-row:nth-child(even) .pokemon-table-cell {
+    background-color: #ecf0f1;
+}
+
+.pokemon-table-row:nth-child(odd) .pokemon-table-cell {
+    background-color: #bdc3c7;
+}
+
+.pokemon-table-cell::first-letter {
+    text-transform: uppercase;
+}
+
+.pokemon-table-row:hover .pokemon-table-cell {
+    background-color: #1abc9c;
+    transform: scale(1.02);
+    color: #ffffff;
+}
+
+.mat-paginator {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.search-form-field {
+    font-size: 14px;
+    width: 40%;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.mat-form-field-label {
+    color: #3498db !important;
+}
+
+.mat-form-field-ripple {
+    background-color: #3498db !important;
+}
+
+.mat-form-field-underline {
+    background-color: #3498db !important;
+}
+
+.search-input {
+    color: #333333 !important;
+}
+
+img {
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
