@@ -1,42 +1,24 @@
 <div class="container">
-    <mat-form-field class="search-form-field">
-      <mat-label>Search</mat-label>
-      <input matInput (keyup)="applyFilter($event)" placeholder="Busca tu pokémon" #input class="search-input">
-    </mat-form-field>
-  
-    <div>
-      <table mat-table [dataSource]="dataSource" matSort class="pokemon-table">
-  
-        <!-- ID Column -->
-        <ng-container matColumnDef="position">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header class="pokemon-table-header-cell"> Nº </th>
-          <td mat-cell *matCellDef="let row" class="pokemon-table-cell" (click)="getRow(row)"> {{row.position}} </td>
-        </ng-container>
-  
-        <!-- Image Column -->
-        <ng-container matColumnDef="image">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header class="pokemon-table-header-cell"> Pokémon </th>
-          <td mat-cell *matCellDef="let row" class="pokemon-table-cell" (click)="getRow(row)">
-            <img src="{{row.image}}" alt="pokemon" width="100" height="100">
-          </td>
-        </ng-container>
-  
-        <!-- Name Column -->
-        <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header class="pokemon-table-header-cell"> Nombre </th>
-          <td mat-cell *matCellDef="let row" class="pokemon-table-cell" (click)="getRow(row)"> {{row.name}} </td>
-        </ng-container>
-  
-        <tr mat-header-row *matHeaderRowDef="displayedColumns" class="pokemon-table-header-row"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="pokemon-table-row"></tr>
-  
-        <!-- Row shown when there is no matching data. -->
-        <tr class="pokemon-table-row" *matNoDataRow>
-          <td class="pokemon-table-cell" colspan="4">Pokémon no encontrado "{{input.value}}"</td>
-        </tr>
-      </table>
-  
-      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+  <mat-form-field class="search-form-field">
+    <mat-label>Busca tu Pokémon</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Escribe el nombre" #input class="search-input">
+  </mat-form-field>
+
+  <div class="pokemon-grid">
+    <div *ngIf="dataSource.filteredData.length === 0" class="no-data-message">
+      Pokémon no encontrado "{{input.value}}"
+    </div>
+
+    <div *ngFor="let row of dataSource.filteredData | slice:(paginator.pageIndex * paginator.pageSize):((paginator.pageIndex + 1) * paginator.pageSize)" class="pokemon-card" (click)="getRow(row)">
+      <div class="pokemon-id">Nº {{row.position}}</div>
+      <img src="{{row.image}}" alt="pokemon" class="pokemon-image">
+      <div class="pokemon-name">{{row.name}}</div>
     </div>
   </div>
-  
+
+  <mat-paginator [length]="dataSource.filteredData.length"
+                 [pageSize]="5"
+                 [pageSizeOptions]="[5, 10, 25, 100]"
+                 aria-label="Select page of Pokémon">
+  </mat-paginator>
+</div>

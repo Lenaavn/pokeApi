@@ -29,7 +29,7 @@ export class PokeTableComponent implements OnInit {
   constructor(private pokeService: PokemonService, private router: Router) { }
 
   ngOnInit(): void {
-    this.dataSource.paginator = this.paginator; 
+    this.dataSource.paginator = this.paginator;
     this.getPokemons();
   }
 
@@ -65,7 +65,7 @@ export class PokeTableComponent implements OnInit {
     }
   }
 
-  getRow(row: PokemonData): void { 
+  getRow(row: PokemonData): void {
     this.router.navigateByUrl(`/pokeDetail/${row.position}`);
   }
 
