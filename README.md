@@ -38,12 +38,12 @@ npm install
 # Iniciar el servidor
 ng serve
 
-
 Luego, abre tu navegador en http://localhost:4200.
+```
 
 📂 Estructura del Proyecto
 
-```plaintext
+```bash
 pokeApiLeandro/
 ├── src/
 │   ├── app/
@@ -72,6 +72,7 @@ pokeApiLeandro/
 ├── angular.json                  # Configuración principal de Angular
 ├── package.json                  # Dependencias y scripts del proyecto
 └── README.md
+```
 
 🔧 Tecnologías Usadas
 
@@ -87,11 +88,12 @@ El proyecto se conecta a la API REST pública de PokeAPI para obtener datos de l
 
 environments
 
-```typescript
+```bash
 export const environment = {
     production: false,
     baseUrl: 'https://pokeapi.co/api/v2'
 };
+```
 
 💡 Posibles Mejoras
 
