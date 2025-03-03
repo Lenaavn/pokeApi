@@ -4,27 +4,32 @@ Bienvenido a PokeAPI 🌟 Este proyecto te permite explorar tus Pokémon favorit
 
 🎯 Características
 
-🗂️ Lista de Pokémon: Explora un listado completo de Pokémon con detalles esenciales.
+- 🗂️ Lista de Pokémon: Explora un listado completo de Pokémon con detalles esenciales.
 
-🔍 Búsqueda: Encuentra rápidamente el Pokémon que buscas ingresando su nombre.
+- 🔍 Búsqueda: Encuentra rápidamente el Pokémon que buscas ingresando su nombre.
 
-🔄 Paginación: Navega entre cientos de Pokémon de manera sencilla y organizada.
+- 🔄 Paginación: Navega entre cientos de Pokémon de manera sencilla y organizada.
 
-🖼️ Imágenes: Visualiza imágenes oficiales de cada Pokémon.
+- 🖼️ Imágenes: Visualiza imágenes oficiales de cada Pokémon.
 
-⚡ Detalles: Haz clic sobre un Pokémon para descubrir más sobre él.
+- ⚡ Detalles: Haz clic sobre un Pokémon para descubrir más sobre él.
+
+---
 
 🛠️ Requisitos
 
 Antes de empezar, asegúrate de contar con lo siguiente:
 
-Node.js (versión 14 o superior).
+- Node.js (versión 14 o superior).
 
-Angular CLI (si usas Angular como framework).
+- Angular CLI (si usas Angular como framework).
 
-Conexión a internet para consumir datos de la PokeAPI.
+- Conexión a internet para consumir datos de la PokeAPI.
+
+---
 
 🚀 Cómo Ejecutar
+
 Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
 ```bash
@@ -40,6 +45,7 @@ ng serve
 
 Luego, abre tu navegador en http://localhost:4200.
 ```
+---
 
 📂 Estructura del Proyecto
 
@@ -73,6 +79,7 @@ pokeApiLeandro/
 ├── package.json                  # Dependencias y scripts del proyecto
 └── README.md
 ```
+---
 
 🔧 Tecnologías Usadas
 
@@ -84,6 +91,8 @@ pokeApiLeandro/
 
 - 🌐 Uso de la PokeAPI
 
+---
+
 El proyecto se conecta a la API REST pública de PokeAPI para obtener datos de los Pokémon. Ejemplo de consumo usando HttpClient de Angular:
 
 environments
@@ -94,6 +103,7 @@ export const environment = {
     baseUrl: 'https://pokeapi.co/api/v2'
 };
 ```
+---
 
 💡 Posibles Mejoras
 
@@ -102,6 +112,8 @@ export const environment = {
 - ⭐ Agregar funcionalidad para marcar Pokémon como favoritos.
 
 - ⭐ Animaciones adicionales para una experiencia más inmersiva.
+
+---
 
 🧙‍♂️ Autor
 
