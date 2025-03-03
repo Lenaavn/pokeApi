@@ -2,6 +2,8 @@
 
 Bienvenido a PokeAPI 🌟 Este proyecto te permite explorar tus Pokémon favoritos de forma interactiva, con una interfaz moderna y fluida. 🚀
 
+---
+
 🎯 Características
 
 - 🗂️ Lista de Pokémon: Explora un listado completo de Pokémon con detalles esenciales.
