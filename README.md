@@ -1,7 +1,9 @@
-📖 PokeAPI: ¡Atrápalos a Todos! 🐾
+# 📖 PokeAPI: ¡Atrápalos a Todos! 🐾
+
 Bienvenido a PokeAPI 🌟 Este proyecto te permite explorar tus Pokémon favoritos de forma interactiva, con una interfaz moderna y fluida. 🚀
 
 🎯 Características
+
 🗂️ Lista de Pokémon: Explora un listado completo de Pokémon con detalles esenciales.
 
 🔍 Búsqueda: Encuentra rápidamente el Pokémon que buscas ingresando su nombre.
@@ -13,6 +15,7 @@ Bienvenido a PokeAPI 🌟 Este proyecto te permite explorar tus Pokémon favorit
 ⚡ Detalles: Haz clic sobre un Pokémon para descubrir más sobre él.
 
 🛠️ Requisitos
+
 Antes de empezar, asegúrate de contar con lo siguiente:
 
 Node.js (versión 14 o superior).
@@ -24,23 +27,23 @@ Conexión a internet para consumir datos de la PokeAPI.
 🚀 Cómo Ejecutar
 Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
-Clona el Repositorio:
+```bash
+# Clonar el repositorio
+git clone https://github.com/Lenaavn/pokeApi
+cd pokeapi
 
-- git clone https://github.com/tu-usuario/pokeapi.git
-- cd pokeapi
+# Instalar dependencias
+npm install
 
-Instala Dependencias:
+# Iniciar el servidor
+ng serve
 
-- npm install
-
-Inicia el Servidor:
-
-- ng serve
 
 Luego, abre tu navegador en http://localhost:4200.
 
 📂 Estructura del Proyecto
 
+```plaintext
 pokeApiLeandro/
 ├── src/
 │   ├── app/
@@ -84,6 +87,7 @@ El proyecto se conecta a la API REST pública de PokeAPI para obtener datos de l
 
 environments
 
+```typescript
 export const environment = {
     production: false,
     baseUrl: 'https://pokeapi.co/api/v2'
