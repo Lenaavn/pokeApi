@@ -4,7 +4,7 @@ Bienvenido a PokeAPI 🌟 Este proyecto te permite explorar tus Pokémon favorit
 
 ---
 
-🎯 Características
+## 🎯 Características
 
 - 🗂️ Lista de Pokémon: Explora un listado completo de Pokémon con detalles esenciales.
 
@@ -18,7 +18,7 @@ Bienvenido a PokeAPI 🌟 Este proyecto te permite explorar tus Pokémon favorit
 
 ---
 
-🛠️ Requisitos
+## 🛠️ Requisitos
 
 Antes de empezar, asegúrate de contar con lo siguiente:
 
@@ -30,7 +30,7 @@ Antes de empezar, asegúrate de contar con lo siguiente:
 
 ---
 
-🚀 Cómo Ejecutar
+## 🚀 Cómo Ejecutar
 
 Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
@@ -49,7 +49,7 @@ Luego, abre tu navegador en http://localhost:4200.
 ```
 ---
 
-📂 Estructura del Proyecto
+## 📂 Estructura del Proyecto
 
 ```bash
 pokeApiLeandro/
@@ -83,7 +83,7 @@ pokeApiLeandro/
 ```
 ---
 
-🔧 Tecnologías Usadas
+## 🔧 Tecnologías Usadas
 
 - 🌟 Framework: Angular
 
@@ -95,7 +95,7 @@ pokeApiLeandro/
 
 ---
 
-El proyecto se conecta a la API REST pública de PokeAPI para obtener datos de los Pokémon. Ejemplo de consumo usando HttpClient de Angular:
+## El proyecto se conecta a la API REST pública de PokeAPI para obtener datos de los Pokémon. Ejemplo de consumo usando HttpClient de Angular
 
 environments
 
@@ -107,7 +107,7 @@ export const environment = {
 ```
 ---
 
-💡 Posibles Mejoras
+## 💡 Posibles Mejoras
 
 - ⭐ Filtros avanzados por tipo de Pokémon (agua, fuego, eléctrico, etc.).
 
@@ -117,6 +117,6 @@ export const environment = {
 
 ---
 
-🧙‍♂️ Autor
+## 🧙‍♂️ Autor
 
 Desarrollado con ❤️ por Leandro Ant. Vidal Núñez. ¡Espero que disfrutes explorando el mundo de los Pokémon tanto como yo disfruté creando esta aplicación! 😊

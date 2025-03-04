@@ -5,7 +5,6 @@ import { MatPaginator } from '@angular/material/paginator';
 import { Router } from '@angular/router';
 import { Pokemon } from '../../models/pokemon';
 
-
 interface PokemonData {
   position: number;
   image: string;

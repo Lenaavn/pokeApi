@@ -39,8 +39,8 @@ export class PokeDetailComponent implements OnInit {
     this.pokemonService.getPokemons(id).subscribe({
       next: (respuesta: Pokemon) => {
         this.pokemon = respuesta;
-        this.pokemonImg = respuesta.sprites.front_default || 'assets/default-image.png';
-        this.pokemonType = respuesta.types?.[0]?.type?.name || 'No disponible'; 
+        this.pokemonImg = respuesta.sprites.other?.['official-artwork']?.front_default || 'default-image-url';
+        this.pokemonType = respuesta.types?.[0]?.type?.name || 'No disponible';
       },
       error: (error) => {
         console.error('Error al obtener el Pokémon:', error);
