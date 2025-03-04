@@ -20,7 +20,7 @@
   margin-top: 20px;
   justify-content: center;
   align-items: center;
-  justify-items: center; 
+  justify-items: center;
 }
 
 .no-data-message {
@@ -119,3 +119,4 @@
     height: 220px;
   }
 }
+
