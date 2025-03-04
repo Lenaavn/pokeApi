@@ -3,6 +3,8 @@ import { PokemonService } from '../../services/pokemon.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { Router } from '@angular/router';
+import { Pokemon } from '../../models/pokemon';
+
 
 interface PokemonData {
   position: number;
@@ -34,15 +36,13 @@ export class PokeTableComponent implements OnInit {
   }
 
   getPokemons(): void {
-    let pokemonData;
-
     for (let i = 1; i <= 200; i++) {
       this.pokeService.getPokemons(i).subscribe({
-        next: (respuesta) => {
-          pokemonData = {
-            position: i,
-            image: respuesta.sprites.front_default,
-            name: respuesta.name
+        next: (pokemon: Pokemon) => {
+          const pokemonData: PokemonData = {
+            position: pokemon.id,
+            image: pokemon.sprites.front_default,
+            name: pokemon.name
           };
 
           this.data.push(pokemonData);
@@ -50,11 +50,12 @@ export class PokeTableComponent implements OnInit {
           this.dataSource.paginator = this.paginator;
         },
         error: (error) => {
-          console.error(error);
+          console.error('Error al obtener el Pokémon:', error);
         }
       });
     }
   }
+
 
   applyFilter(event: Event): void {
     const filterValue = (event.target as HTMLInputElement).value;
