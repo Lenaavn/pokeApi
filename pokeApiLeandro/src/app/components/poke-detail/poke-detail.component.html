@@ -17,6 +17,10 @@
 </mat-card>
 
 <mat-card-actions class="pokemon-card-actions">
-  <button mat-button (click)="previousPokemon()">Anterior</button>
+  <button mat-button (click)="previousPokemon()" 
+    [disabled]="pokemon.id === 1" 
+    [ngClass]="{'disabled-btn': pokemon.id === 1}">
+    Anterior
+  </button>
   <button mat-button (click)="nextPokemon()">Siguiente</button>
 </mat-card-actions>
