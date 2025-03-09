@@ -47,4 +47,20 @@ export class PokeDetailComponent implements OnInit {
       }
     });
   }
+
+  previousPokemon() {
+    let prevId = this.pokemon.id - 1;
+    if (prevId < 1) {
+      prevId = 500; 
+    }
+    this.getPokemon(prevId);
+  }
+
+  nextPokemon() {
+    let nextId = this.pokemon.id + 1;
+    if (nextId > 500) { 
+      nextId = 1;
+    }
+    this.getPokemon(nextId);
+  }
 }
