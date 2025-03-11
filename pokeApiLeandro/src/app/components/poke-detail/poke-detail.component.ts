@@ -51,14 +51,14 @@ export class PokeDetailComponent implements OnInit {
   previousPokemon() {
     let prevId = this.pokemon.id - 1;
     if (prevId < 1) {
-      prevId = 1025; 
+      prevId = 1025;
     }
     this.getPokemon(prevId);
   }
 
   nextPokemon() {
     let nextId = this.pokemon.id + 1;
-    if (nextId > 1025) { 
+    if (nextId > 1025) {
       nextId = 1;
     }
     this.getPokemon(nextId);

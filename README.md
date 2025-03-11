@@ -36,8 +36,8 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/Lenaavn/pokeApi
-cd pokeapi
+git clone https://github.com/Lenaavn/pokeApi.git
+cd pokeApiLeandro
 
 # Instalar dependencias
 npm install
@@ -58,14 +58,14 @@ pokeApiLeandro/
 │   │   ├── components/          # Componentes reutilizables de tu app
 │   │   │   ├── header/          # Encabezado de la aplicación
 │   │   │   ├── footer/          # Pie de página de la aplicación
-│   │   │   ├── poke-list/       # Componente para listar Pokémon
+│   │   │   ├── poke-table/       # Componente para listar Pokémon
 │   │   │   ├── poke-detail/     # Componente para mostrar detalles de un Pokémon
 │   │   ├── services/            # Servicios para manejar lógica y APIs
 │   │   │   ├── pokemon.service.ts # Servicio para consumir la PokeAPI
 │   │   ├── shared/              # Elementos compartidos como modelos y utilidades
 │   │   │   ├── models/          # Interfaces y modelos de datos
 │   │   │   │   ├── pokemon.model.ts # Modelo de datos para un Pokémon
-│   │   │   ├── utilities/       # Funciones reutilizables
+│   │   │   ├── material.module.ts/       # Funciones reutilizables de angular material
 │   │   ├── app-routing.module.ts # Configuración de rutas
 │   │   ├── app.component.css     # Estilos globales de la aplicación
 │   │   ├── app.component.html    # Plantilla principal
