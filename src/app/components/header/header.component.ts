@@ -14,7 +14,6 @@ export class HeaderComponent implements OnInit {
 
   home(): void {
     this.router.navigate(['/home']).then(() => {
-      location.assign('/home');
     });
   }
   
