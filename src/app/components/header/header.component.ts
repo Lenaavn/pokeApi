@@ -13,8 +13,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void { }
 
   home(): void {
-    this.router.navigate(['/home']).then(() => {
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      this.router.navigate(['/home']);
     });
   }
-  
+
 }
